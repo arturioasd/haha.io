@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width">
+    <script defer src="burgermenu.js" ></script>
+    <script defer src="header.js" ></script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="header__body">
+                    <div class="header__logo">
+                        <img src="IMG_6308.JPEG" alt="">
+                    </div>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <div class="header__saved">
+                        <span></span>
+                    </div>
+                    <div class="header__filter">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="header__menu">
+                        <ul class="header__list">
+                            <li>
+                                <a href="#" class="header__link">Главная</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__link">Каталог</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__link">О нас</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__link">Местонахождение</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="content">
+
+            <div class="container">
+
+                <div class="catalog">
+
+                    <div class="filter">
+                        <form  class="filter__form" method="get" action="http://127.0.0.1:5500/" >
+                            <div class="row-filter_ready">
+                                <div class="row-filter_true-type"><p>Платье</p></div>
+                                <div class="row-filter_true-type"><p>Платье</p></div>
+                                <div class="row-filter_true-type"><p>Платье</p></div>
+                                <div class="row-filter_true-type"><p>Платье</p></div>
+                                <div class="row-filter_true-type"><p>Платье</p></div>
+                            </div>
+                            <div class="filter__section">
+                                <div class="filter__title">
+                                    <p>Категория</p>
+                                </div>
+                                <ul class="filter__category-list">
+                                    <li class="filter__type-link">
+                                        <label  class="radio-label">
+                                            <input type="radio"  class="radio" name="radio__category">
+                                            <span class="radio-view">
+                                            <svg class="radio-icon" xmlns="http://www.w3.org/2000/svg" width="14"  viewBox="0 0 511.985 511.985">
+                                                <path fill="#fff" d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z"/>
+                                            </svg>
+                                            </span>
+                                            Мальчикам
+                                        </label>
+                                        </li>
+                                    <li class="filter__type-link">
+                                        <label  class="radio-label">
+                                            <input type="radio"  class="radio" name="radio__category">
+                                            <span class="radio-view">
+                                            <svg class="radio-icon" xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 511.985 511.985">
+                                                <path fill="#fff" d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z"/>
+                                            </svg>
+                                            </span>
+                                            Девочкам
+                                        </label>
+                                        </li>        
+                                    <li class="filter__type-link">
+                                        <label  class="radio-label">
+                                            <input type="radio"  class="radio" name="radio__category">
+                                            <span class="radio-view">
+                                            <svg class="radio-icon" xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 511.985 511.985">
+                                                <path fill="#fff" d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z"/>
+                                            </svg>
+                                            </span>
+                                            Взрослым
+                                        </label>
+                                        </li>
+                                </ul>
+                            </div>
+                            <div class="filter__section">
+                                <div class="filter__title">
+                                    <p>Тип</p>
+                                </div>
+                                <ul class="filter__type-list">
+                                    <li class="filter__type-link">
+                                    <label  class="checkbox-label">
+                                        <input type="checkbox"  class="checkbox">
+                                        <span class="checkbox-view">
+                                        <svg class="checkbox-icon" xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 511.985 511.985">
+                                            <path fill="#fff" d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z"/>
+                                        </svg>
+                                        </span>
+                                        Платья
+                                    </label>
+                                    </li>
+                                    <li class="filter__type-link">
+                                        <label  class="checkbox-label">
+                                            <input type="checkbox"  class="checkbox">
+                                            <span class="checkbox-view">
+                                            <svg class="checkbox-icon" xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 511.985 511.985">
+                                                <path fill="#fff" d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z"/>
+                                            </svg>
+                                            </span>
+                                            Платья
+                                        </label>
+                                    </li>
+                                    <li class="filter__type-link">
+                                        <label  class="checkbox-label">
+                                            <input type="checkbox"  class="checkbox">
+                                            <span class="checkbox-view">
+                                            <svg class="checkbox-icon" xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 511.985 511.985">
+                                                <path fill="#fff" d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z"/>
+                                            </svg>
+                                            </span>
+                                            Супергерои
+                                        </label>
+                                    </li>
+                                    <li class="filter__type-link">
+                                        <label  class="checkbox-label">
+                                            <input type="checkbox"  class="checkbox">
+                                            <span class="checkbox-view">
+                                            <svg class="checkbox-icon" xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 511.985 511.985">
+                                                <path fill="#fff" d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z"/>
+                                            </svg>
+                                            </span>
+                                            Футболки
+                                        </label>
+                                    </li>
+                                    <li class="filter__type-link">
+                                        <label  class="checkbox-label">
+                                            <input type="checkbox"  class="checkbox">
+                                            <span class="checkbox-view">
+                                            <svg class="checkbox-icon" xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 511.985 511.985">
+                                                <path fill="#fff" d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z"/>
+                                            </svg>
+                                            </span>
+                                            Футболки
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filter__section">
+                                <div class="filter__title">
+                                    <p>Размеры</p>
+                                </div>
+                                <div class="filter__size">
+                                    <ul class="filter__size-list">
+                                        <li class="filter__size-link">
+                                            <label  class="checkbox-label">
+                                                <input type="checkbox"  class="checkbox">
+                                                <span class="checkbox-view">
+                                                <svg class="checkbox-icon" xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 511.985 511.985">
+                                                    <path fill="#fff" d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z"/>
+                                                </svg>
+                                                </span>
+                                                28
+                                            </label>
+                                        </li>
+                                        <li class="filter__size-link">
+                                            <label  class="checkbox-label">
+                                                <input type="checkbox"  class="checkbox">
+                                                <span class="checkbox-view">
+                                                <svg class="checkbox-icon" xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 511.985 511.985">
+                                                    <path fill="#fff" d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z"/>
+                                                </svg>
+                                                </span>
+                                                28
+                                            </label>
+                                        </li>
+                                        <li class="filter__size-link">
+                                            <label  class="checkbox-label">
+                                                <input type="checkbox"  class="checkbox">
+                                                <span class="checkbox-view">
+                                                <svg class="checkbox-icon" xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 511.985 511.985">
+                                                    <path fill="#fff" d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z"/>
+                                                </svg>
+                                                </span>
+                                                28
+                                            </label>
+                                        </li>
+                                        <li class="filter__size-link">
+                                            <label  class="checkbox-label">
+                                                <input type="checkbox"  class="checkbox">
+                                                <span class="checkbox-view">
+                                                <svg class="checkbox-icon" xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 511.985 511.985">
+                                                    <path fill="#fff" d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z"/>
+                                                </svg>
+                                                </span>
+                                                28
+                                            </label>
+                                        </li>
+                                        <li class="filter__size-link">
+                                            <label  class="checkbox-label">
+                                                <input type="checkbox"  class="checkbox">
+                                                <span class="checkbox-view">
+                                                <svg class="checkbox-icon" xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 511.985 511.985">
+                                                    <path fill="#fff" d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z"/>
+                                                </svg>
+                                                </span>
+                                                28
+                                            </label>
+                                        </li>
+                                        <li class="filter__size-link">
+                                            <label  class="checkbox-label">
+                                                <input type="checkbox"  class="checkbox">
+                                                <span class="checkbox-view">
+                                                <svg class="checkbox-icon" xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 511.985 511.985">
+                                                    <path fill="#fff" d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z"/>
+                                                </svg>
+                                                </span>
+                                                28
+                                            </label>
+                                        </li>
+                                        <li class="filter__size-link">
+                                            <label  class="checkbox-label">
+                                                <input type="checkbox"  class="checkbox">
+                                                <span class="checkbox-view">
+                                                <svg class="checkbox-icon" xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 511.985 511.985">
+                                                    <path fill="#fff" d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z"/>
+                                                </svg>
+                                                </span>
+                                                28
+                                            </label>
+                                        </li>
+                                        <li class="filter__size-link">
+                                            <label  class="checkbox-label">
+                                                <input type="checkbox"  class="checkbox">
+                                                <span class="checkbox-view">
+                                                <svg class="checkbox-icon" xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 511.985 511.985">
+                                                    <path fill="#fff" d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z"/>
+                                                </svg>
+                                                </span>
+                                                28
+                                            </label>
+                                        </li>
+                                        <li class="filter__size-link">
+                                            <label  class="checkbox-label">
+                                                <input type="checkbox"  class="checkbox">
+                                                <span class="checkbox-view">
+                                                <svg class="checkbox-icon" xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 511.985 511.985">
+                                                    <path fill="#fff" d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z"/>
+                                                </svg>
+                                                </span>
+                                                28
+                                            </label>
+                                        </li>
+                                        
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filter__button">
+                                    <input class='filter__button-reset' type="submit" value="фильтровать" >
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Карточка товара -->                   
+                    <div class="cards">
+
+                        <div class="card">
+                            <!-- Верхняя часть -->
+                            <div class="card__top">
+                            <!-- Изображение-ссылка товара -->
+                            <a href="#" class="card__image">
+                                <img
+                                src="iphone-14-pro-max-gold.png"
+                                alt="Apple IPhone 14 PRO Max Gold"
+                                />
+                            </a>
+                            <!-- Скидка на товар -->
+    
+                            </div>
+                            <!-- Нижняя часть -->
+                            <div class="card__bottom">
+                            <!-- Цены на товар (с учетом скидки и без)-->
+    
+                            <!-- Ссылка-название товара -->
+                            <a href="#" class="card__title">
+                                Черепашка ниндзя
+                            </a>
+                            <!-- Кнопка добавить Перейти -->
+                            <button class="card__add">Перейти</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <!-- Верхняя часть -->
+                            <div class="card__top">
+                            <!-- Изображение-ссылка товара -->
+                            <a href="#" class="card__image">
+                                <img
+                                src="iphone-14-pro-max-gold.png"
+                                alt="Apple IPhone 14 PRO Max Gold"
+                                />
+                            </a>
+                            <!-- Скидка на товар -->
+    
+                            </div>
+                            <!-- Нижняя часть -->
+                            <div class="card__bottom">
+                            <!-- Цены на товар (с учетом скидки и без)-->
+    
+                            <!-- Ссылка-название товара -->
+                            <a href="#" class="card__title">
+                                Черепашка ниндзя
+                            </a>
+                            <!-- Кнопка добавить Перейти -->
+                            <button class="card__add">Перейти</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <!-- Верхняя часть -->
+                            <div class="card__top">
+                            <!-- Изображение-ссылка товара -->
+                            <a href="#" class="card__image">
+                                <img
+                                src="iphone-14-pro-max-gold.png"
+                                alt="Apple IPhone 14 PRO Max Gold"
+                                />
+                            </a>
+                            <!-- Скидка на товар -->
+    
+                            </div>
+                            <!-- Нижняя часть -->
+                            <div class="card__bottom">
+                            <!-- Цены на товар (с учетом скидки и без)-->
+    
+                            <!-- Ссылка-название товара -->
+                            <a href="#" class="card__title">
+                                Черепашка ниндзя
+                            </a>
+                            <!-- Кнопка добавить Перейти -->
+                            <button class="card__add">Перейти</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <!-- Верхняя часть -->
+                            <div class="card__top">
+                            <!-- Изображение-ссылка товара -->
+                            <a href="#" class="card__image">
+                                <img
+                                src="iphone-14-pro-max-gold.png"
+                                alt="Apple IPhone 14 PRO Max Gold"
+                                />
+                            </a>
+                            <!-- Скидка на товар -->
+    
+                            </div>
+                            <!-- Нижняя часть -->
+                            <div class="card__bottom">
+                            <!-- Цены на товар (с учетом скидки и без)-->
+    
+                            <!-- Ссылка-название товара -->
+                            <a href="#" class="card__title">
+                                Черепашка ниндзя
+                            </a>
+                            <!-- Кнопка добавить Перейти -->
+                            <button class="card__add">Перейти</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <!-- Верхняя часть -->
+                            <div class="card__top">
+                            <!-- Изображение-ссылка товара -->
+                            <a href="#" class="card__image">
+                                <img
+                                src="iphone-14-pro-max-gold.png"
+                                alt="Apple IPhone 14 PRO Max Gold"
+                                />
+                            </a>
+                            <!-- Скидка на товар -->
+    
+                            </div>
+                            <!-- Нижняя часть -->
+                            <div class="card__bottom">
+                            <!-- Цены на товар (с учетом скидки и без)-->
+    
+                            <!-- Ссылка-название товара -->
+                            <a href="#" class="card__title">
+                                Черепашка ниндзя
+                            </a>
+                            <!-- Кнопка добавить Перейти -->
+                            <button class="card__add">Перейти</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <!-- Верхняя часть -->
+                            <div class="card__top">
+                            <!-- Изображение-ссылка товара -->
+                            <a href="#" class="card__image">
+                                <img
+                                src="iphone-14-pro-max-gold.png"
+                                alt="Apple IPhone 14 PRO Max Gold"
+                                />
+                            </a>
+                            <!-- Скидка на товар -->
+    
+                            </div>
+                            <!-- Нижняя часть -->
+                            <div class="card__bottom">
+                            <!-- Цены на товар (с учетом скидки и без)-->
+    
+                            <!-- Ссылка-название товара -->
+                            <a href="#" class="card__title">
+                                Черепашка ниндзя
+                            </a>
+                            <!-- Кнопка добавить Перейти -->
+                            <button class="card__add">Перейти</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <!-- Верхняя часть -->
+                            <div class="card__top">
+                            <!-- Изображение-ссылка товара -->
+                            <a href="#" class="card__image">
+                                <img
+                                src="iphone-14-pro-max-gold.png"
+                                alt="Apple IPhone 14 PRO Max Gold"
+                                />
+                            </a>
+                            <!-- Скидка на товар -->
+    
+                            </div>
+                            <!-- Нижняя часть -->
+                            <div class="card__bottom">
+                            <!-- Цены на товар (с учетом скидки и без)-->
+    
+                            <!-- Ссылка-название товара -->
+                            <a href="#" class="card__title">
+                                Черепашка ниндзя
+                            </a>
+                            <!-- Кнопка добавить Перейти -->
+                            <button class="card__add">Перейти</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <!-- Верхняя часть -->
+                            <div class="card__top">
+                            <!-- Изображение-ссылка товара -->
+                            <a href="#" class="card__image">
+                                <img
+                                src="iphone-14-pro-max-gold.png"
+                                alt="Apple IPhone 14 PRO Max Gold"
+                                />
+                            </a>
+                            <!-- Скидка на товар -->
+    
+                            </div>
+                            <!-- Нижняя часть -->
+                            <div class="card__bottom">
+                            <!-- Цены на товар (с учетом скидки и без)-->
+    
+                            <!-- Ссылка-название товара -->
+                            <a href="#" class="card__title">
+                                Черепашка ниндзя
+                            </a>
+                            <!-- Кнопка добавить Перейти -->
+                            <button class="card__add">Перейти</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <!-- Верхняя часть -->
+                            <div class="card__top">
+                            <!-- Изображение-ссылка товара -->
+                            <a href="#" class="card__image">
+                                <img
+                                src="iphone-14-pro-max-gold.png"
+                                alt="Apple IPhone 14 PRO Max Gold"
+                                />
+                            </a>
+                            <!-- Скидка на товар -->
+    
+                            </div>
+                            <!-- Нижняя часть -->
+                            <div class="card__bottom">
+                            <!-- Цены на товар (с учетом скидки и без)-->
+    
+                            <!-- Ссылка-название товара -->
+                            <a href="#" class="card__title">
+                                Черепашка ниндзя
+                            </a>
+                            <!-- Кнопка добавить Перейти -->
+                            <button class="card__add">Перейти</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <!-- Верхняя часть -->
+                            <div class="card__top">
+                            <!-- Изображение-ссылка товара -->
+                            <a href="#" class="card__image">
+                                <img
+                                src="iphone-14-pro-max-gold.png"
+                                alt="Apple IPhone 14 PRO Max Gold"
+                                />
+                            </a>
+                            <!-- Скидка на товар -->
+    
+                            </div>
+                            <!-- Нижняя часть -->
+                            <div class="card__bottom">
+                            <!-- Цены на товар (с учетом скидки и без)-->
+    
+                            <!-- Ссылка-название товара -->
+                            <a href="#" class="card__title">
+                                Черепашка ниндзя
+                            </a>
+                            <!-- Кнопка добавить Перейти -->
+                            <button class="card__add">Перейти</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <!-- Верхняя часть -->
+                            <div class="card__top">
+                            <!-- Изображение-ссылка товара -->
+                            <a href="#" class="card__image">
+                                <img
+                                src="iphone-14-pro-max-gold.png"
+                                alt="Apple IPhone 14 PRO Max Gold"
+                                />
+                            </a>
+                            <!-- Скидка на товар -->
+    
+                            </div>
+                            <!-- Нижняя часть -->
+                            <div class="card__bottom">
+                            <!-- Цены на товар (с учетом скидки и без)-->
+    
+                            <!-- Ссылка-название товара -->
+                            <a href="#" class="card__title">
+                                Черепашка ниндзя
+                            </a>
+                            <!-- Кнопка добавить Перейти -->
+                            <button class="card__add">Перейти</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <!-- Верхняя часть -->
+                            <div class="card__top">
+                            <!-- Изображение-ссылка товара -->
+                            <a href="#" class="card__image">
+                                <img
+                                src="iphone-14-pro-max-gold.png"
+                                alt="Apple IPhone 14 PRO Max Gold"
+                                />
+                            </a>
+                            <!-- Скидка на товар -->
+    
+                            </div>
+                            <!-- Нижняя часть -->
+                            <div class="card__bottom">
+                            <!-- Цены на товар (с учетом скидки и без)-->
+    
+                            <!-- Ссылка-название товара -->
+                            <a href="#" class="card__title">
+                                Черепашка ниндзя
+                            </a>
+                            <!-- Кнопка добавить Перейти -->
+                            <button class="card__add">Перейти</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
