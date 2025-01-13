@@ -14,19 +14,24 @@
     <div class="wrapper">
         <div class="header">
             <div class="container">
+
                 <div class="header__body">
                     <div class="header__logo">
                         <img src="IMG_6308.JPEG" alt="">
                     </div>
-                    <div class="header__burger">
-                        <span></span>
-                    </div>
+
                     <div class="header__saved">
-                        <span></span>
+                        <div class="header__saved-img">
+                            <a href="#"><img src="header__heart-icons.svg" alt=""></a>
+                            <p class = 'fovarite'>1</p>
+                        </div>
                     </div>
                     <div class="header__filter">
                         <span></span>
                         <span></span>
+                        <span></span>
+                    </div>
+                    <div class="header__burger">
                         <span></span>
                     </div>
                     <div class="header__menu">
@@ -34,8 +39,16 @@
                             <li>
                                 <a href="#" class="header__link">Главная</a>
                             </li>
+
                             <li>
                                 <a href="#" class="header__link">Каталог</a>
+                            </li>
+                            <li>
+                                <div class='header__link fovarite__block'>
+                                    
+                                    <a href="#">Сохранненое</a>
+                                    <p class="fovarite">1</p>
+                                </div>
                             </li>
                             <li>
                                 <a href="#" class="header__link">О нас</a>
@@ -43,7 +56,6 @@
                             <li>
                                 <a href="#" class="header__link">Местонахождение</a>
                             </li>
-
                         </ul>
                     </div>
                 </div>
@@ -54,10 +66,10 @@
         <div class="content">
 
             <div class="container">
-
                 <div class="catalog">
+                    <div class="catalog__content">
 
-                    <div class="filter">
+                        <div class="filter">
                         <form  class="filter__form" method="get" action="http://127.0.0.1:5500/" >
                             <div class="row-filter_ready">
                                 <div class="row-filter_true-type"><p>Платье</p></div>
@@ -282,10 +294,10 @@
                                     <input class='filter__button-reset' type="submit" value="фильтровать" >
                             </div>
                         </form>
-                    </div>
+                        </div>
 
                     <!-- Карточка товара -->                   
-                    <div class="cards">
+                        <div class="cards">
 
                         <div class="card">
                             <!-- Верхняя часть -->
@@ -387,207 +399,45 @@
                             <button class="card__add">Перейти</button>
                             </div>
                         </div>
-                        <div class="card">
-                            <!-- Верхняя часть -->
-                            <div class="card__top">
-                            <!-- Изображение-ссылка товара -->
-                            <a href="#" class="card__image">
-                                <img
-                                src="iphone-14-pro-max-gold.png"
-                                alt="Apple IPhone 14 PRO Max Gold"
-                                />
-                            </a>
-                            <!-- Скидка на товар -->
-    
-                            </div>
-                            <!-- Нижняя часть -->
-                            <div class="card__bottom">
-                            <!-- Цены на товар (с учетом скидки и без)-->
-    
-                            <!-- Ссылка-название товара -->
-                            <a href="#" class="card__title">
-                                Черепашка ниндзя
-                            </a>
-                            <!-- Кнопка добавить Перейти -->
-                            <button class="card__add">Перейти</button>
-                            </div>
+
+                        <div class="pagination">
+                            <nav aria-label="pagination__nav">
+                                <ul class="pagination__row">
+                                    <div class="pagination__list">
+                                        <li class="pagination__item ">
+                                          <a class="pagination__item-link disabled">Превыдущая</a>
+                                        </li>
+                                        <li class="pagination__item"><a class="pagination__item-link active_page" href="#">1</a></li>
+                                        <li class="pagination__item"><a class="pagination__item-link" href="#">2</a></li>
+                                        <li class="pagination__item"><a class="pagination__item-link" href="#">3</a></li>
+                                        <li class="pagination__item">
+                                          <a class="pagination__item-link" href="#">Следущая</a>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </nav>
                         </div>
-                        <div class="card">
-                            <!-- Верхняя часть -->
-                            <div class="card__top">
-                            <!-- Изображение-ссылка товара -->
-                            <a href="#" class="card__image">
-                                <img
-                                src="iphone-14-pro-max-gold.png"
-                                alt="Apple IPhone 14 PRO Max Gold"
-                                />
-                            </a>
-                            <!-- Скидка на товар -->
-    
-                            </div>
-                            <!-- Нижняя часть -->
-                            <div class="card__bottom">
-                            <!-- Цены на товар (с учетом скидки и без)-->
-    
-                            <!-- Ссылка-название товара -->
-                            <a href="#" class="card__title">
-                                Черепашка ниндзя
-                            </a>
-                            <!-- Кнопка добавить Перейти -->
-                            <button class="card__add">Перейти</button>
-                            </div>
                         </div>
-                        <div class="card">
-                            <!-- Верхняя часть -->
-                            <div class="card__top">
-                            <!-- Изображение-ссылка товара -->
-                            <a href="#" class="card__image">
-                                <img
-                                src="iphone-14-pro-max-gold.png"
-                                alt="Apple IPhone 14 PRO Max Gold"
-                                />
-                            </a>
-                            <!-- Скидка на товар -->
-    
-                            </div>
-                            <!-- Нижняя часть -->
-                            <div class="card__bottom">
-                            <!-- Цены на товар (с учетом скидки и без)-->
-    
-                            <!-- Ссылка-название товара -->
-                            <a href="#" class="card__title">
-                                Черепашка ниндзя
-                            </a>
-                            <!-- Кнопка добавить Перейти -->
-                            <button class="card__add">Перейти</button>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <!-- Верхняя часть -->
-                            <div class="card__top">
-                            <!-- Изображение-ссылка товара -->
-                            <a href="#" class="card__image">
-                                <img
-                                src="iphone-14-pro-max-gold.png"
-                                alt="Apple IPhone 14 PRO Max Gold"
-                                />
-                            </a>
-                            <!-- Скидка на товар -->
-    
-                            </div>
-                            <!-- Нижняя часть -->
-                            <div class="card__bottom">
-                            <!-- Цены на товар (с учетом скидки и без)-->
-    
-                            <!-- Ссылка-название товара -->
-                            <a href="#" class="card__title">
-                                Черепашка ниндзя
-                            </a>
-                            <!-- Кнопка добавить Перейти -->
-                            <button class="card__add">Перейти</button>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <!-- Верхняя часть -->
-                            <div class="card__top">
-                            <!-- Изображение-ссылка товара -->
-                            <a href="#" class="card__image">
-                                <img
-                                src="iphone-14-pro-max-gold.png"
-                                alt="Apple IPhone 14 PRO Max Gold"
-                                />
-                            </a>
-                            <!-- Скидка на товар -->
-    
-                            </div>
-                            <!-- Нижняя часть -->
-                            <div class="card__bottom">
-                            <!-- Цены на товар (с учетом скидки и без)-->
-    
-                            <!-- Ссылка-название товара -->
-                            <a href="#" class="card__title">
-                                Черепашка ниндзя
-                            </a>
-                            <!-- Кнопка добавить Перейти -->
-                            <button class="card__add">Перейти</button>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <!-- Верхняя часть -->
-                            <div class="card__top">
-                            <!-- Изображение-ссылка товара -->
-                            <a href="#" class="card__image">
-                                <img
-                                src="iphone-14-pro-max-gold.png"
-                                alt="Apple IPhone 14 PRO Max Gold"
-                                />
-                            </a>
-                            <!-- Скидка на товар -->
-    
-                            </div>
-                            <!-- Нижняя часть -->
-                            <div class="card__bottom">
-                            <!-- Цены на товар (с учетом скидки и без)-->
-    
-                            <!-- Ссылка-название товара -->
-                            <a href="#" class="card__title">
-                                Черепашка ниндзя
-                            </a>
-                            <!-- Кнопка добавить Перейти -->
-                            <button class="card__add">Перейти</button>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <!-- Верхняя часть -->
-                            <div class="card__top">
-                            <!-- Изображение-ссылка товара -->
-                            <a href="#" class="card__image">
-                                <img
-                                src="iphone-14-pro-max-gold.png"
-                                alt="Apple IPhone 14 PRO Max Gold"
-                                />
-                            </a>
-                            <!-- Скидка на товар -->
-    
-                            </div>
-                            <!-- Нижняя часть -->
-                            <div class="card__bottom">
-                            <!-- Цены на товар (с учетом скидки и без)-->
-    
-                            <!-- Ссылка-название товара -->
-                            <a href="#" class="card__title">
-                                Черепашка ниндзя
-                            </a>
-                            <!-- Кнопка добавить Перейти -->
-                            <button class="card__add">Перейти</button>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <!-- Верхняя часть -->
-                            <div class="card__top">
-                            <!-- Изображение-ссылка товара -->
-                            <a href="#" class="card__image">
-                                <img
-                                src="iphone-14-pro-max-gold.png"
-                                alt="Apple IPhone 14 PRO Max Gold"
-                                />
-                            </a>
-                            <!-- Скидка на товар -->
-    
-                            </div>
-                            <!-- Нижняя часть -->
-                            <div class="card__bottom">
-                            <!-- Цены на товар (с учетом скидки и без)-->
-    
-                            <!-- Ссылка-название товара -->
-                            <a href="#" class="card__title">
-                                Черепашка ниндзя
-                            </a>
-                            <!-- Кнопка добавить Перейти -->
-                            <button class="card__add">Перейти</button>
-                            </div>
-                        </div>
+
+                    <!--ПАГИНАЦИЯ-->
                     </div>
+                    <!-- <div class="pagination">
+                        <nav aria-label="pagination__nav">
+                            <ul class="pagination__row">
+                                <div class="pagination__list">
+                                    <li class="pagination__item ">
+                                      <a class="pagination__item-link disabled">Превыдущая</a>
+                                    </li>
+                                    <li class="pagination__item"><a class="pagination__item-link active_page" href="#">1</a></li>
+                                    <li class="pagination__item"><a class="pagination__item-link" href="#">2</a></li>
+                                    <li class="pagination__item"><a class="pagination__item-link" href="#">3</a></li>
+                                    <li class="pagination__item">
+                                      <a class="pagination__item-link" href="#">Следущая</a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </nav>
+                    </div> -->
                 </div>
             </div>
         </div>
