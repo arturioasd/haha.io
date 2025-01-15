@@ -108,7 +108,7 @@ ul { list-style-type: none; }
 .header__burger{
     display:none
 }
-@media (min-width: 768px){
+@media (min-width: 769px){
   .phone{
     display: none;
   }
@@ -118,7 +118,7 @@ ul { list-style-type: none; }
     display: none;
   }
   .header__logo{
-    display: block;
+    display: none;
     
   }
   .header__search{
@@ -253,19 +253,6 @@ ul { list-style-type: none; }
         height: 50px;
         justify-content: flex-end;
     }
-    .header__logo{
-        position: absolute;
-          width: 35px;
-
-        
-        left: 0;
-        top: 50%;                         /* 3 */
-        transform: translate(0, -50%) }
-        
-    .header__logo img{
-       max-height: 50px;
-    }
-    
     .header__burger{
         display: block;
         position: relative;
@@ -342,14 +329,36 @@ ul { list-style-type: none; }
 
 }
 
-@media (max-width:410px){
-  .header__logo{
-    display: none;
-  }
+@media (max-width: 480px) {
   .header__search{
     left: 0;
   }
 }
+@media (max-width: 380px){
+  .header__search{
+    width: 140px;
+  }
+  .header__search input{
+    width: 100px;
+  }
+  
+}
+
+@media (max-width: 350px){
+  .header__search{
+    width: 130px;
+  }
+  .header__search input{
+    width: 100px;
+  }
+  
+}
+/* @media (max-width:410px){
+
+  .header__search{
+    left: 0;
+  }
+} */
     /* ---------------------- БУРГЕР ВНИЗ----------------------------- */
 
 
@@ -997,6 +1006,34 @@ ul { list-style-type: none; }
   .card__image:hover > img {
     transform: scale(1.1);
   }
+
+  .card__saved-button{
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    left: 35px;
+    z-index: 1;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-image: url("card-unactive-save.svg");
+  }
+  
+  .card__saved-button:hover{
+    background-image: url("card-unactive-save-hover.svg");
+  }
+  
+  .card__saved-button.actived__save{
+    background-image: url("card-unactive-save-hover.svg");
+  }
+
+  @media (max-width: 500px) {
+    .card__saved-button {
+      left: 10px;
+    }
+  }
+  
   
   /* Размещаем скидку на товар относительно изображения */
 
@@ -1119,12 +1156,12 @@ ul { list-style-type: none; }
 
 @media (max-width:767px){
    .cards{
-    position: static;
+    /* position: static; */
    }
   .pagination{
-    position: static;
-    justify-self: center;
-    margin: auto;
+    /* position: static; */
+    /* justify-self: center;
+    margin: auto; */
     
   }
   
@@ -1135,9 +1172,9 @@ ul { list-style-type: none; }
   /* .pagination__row{
     padding: 10px 0px 40px 0px;
   } */
-  .pagination__row{
+  /* .pagination__row{
     padding: 0px 0px 30px 30px;
-  }
+  } */
   
   .pagination__list{
     
@@ -1156,9 +1193,9 @@ ul { list-style-type: none; }
 } */
 
 @media (max-width:500px) {
-  .pagination__row{
+  /* .pagination__row{
     padding: 0;
-  }
+  } */
   .pagination{
     /* margin: 0; */
     padding: 0;
@@ -1191,6 +1228,15 @@ footer{
   flex-direction: column;
   margin-top: 100px;/*отступ сверху*/
 }
+
+@media (max-width:768px){
+  .menu{
+    flex-direction: column;
+  }
+  .menu li{
+    margin: 5px 0px 0px 0px;
+  }
+}
 footer .wave{
   position: absolute;/*абсолютное позиционирование*/
   top: -100px;
@@ -1219,6 +1265,22 @@ footer .wave{
   margin: 0 10px;
   display: inline-block;/*отображать как строчно-блочный элемент*/
   transition: 0.5s;/*плавный переход*/
+}
+
+.social li a{
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+
+.instagram-icon{
+  background-image: url('instagram.svg');
+}
+
+.whatsapp-icon{
+  background-image: url('whatsapp.svg');
 }
 .menu li a {
   font-size: 1.2em;/*размер ссылок меню*/
