@@ -6,11 +6,13 @@
       let header__filter = document.querySelector('.header__filter')
       let header__saved = document.querySelector('.header__saved')
       let body = document.querySelector('body');
+      let header__search = document.querySelector('.header__search')
       header__burger.addEventListener('click', (e)=> {
         header__burger.classList.toggle('active');
         header__menu.classList.toggle('active');
         header__filter.classList.toggle('delete-element');
         body.classList.toggle('lock');
+        header__search.classList.toggle('delete-element')
       })
 
 
@@ -20,6 +22,7 @@
         header__saved.classList.toggle('delete-element');
         header__burger.classList.toggle('delete-element');
         body.classList.toggle('lock');
+        header__search.classList.toggle('delete-element')
       })
     }
   })();
