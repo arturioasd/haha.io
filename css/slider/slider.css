@@ -46,8 +46,8 @@
 }
 @media (max-width:768px) {
   .slider-for {
-    min-width: 400px;
-    max-width: 400px;
+    min-width: 300px;
+    max-width: 300px;
   }
   .slider-nav{
     width: 300px;
