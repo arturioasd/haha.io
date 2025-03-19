@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/nouislider.min.css">
+    <link rel="stylesheet" href="./css/catalog.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <script defer src="js/jquery-3.7.1.js"></script>
+    <script src="/js/libs/nouislider.min.js" defer ></script>
+    <script src="/js/range-year.js" defer ></script>
+    <script src="/js/range-price.js" defer ></script>
+    <script src="/js/burgermenu.js" defer ></script>
+
+    <script src="/js/spoiler.js" defer ></script>
+    <title>Каталог</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="header__row">
+                <div class="header__logo"><img src="/image/logo-moto.png" alt=""></div>
+
+                <div class="header__right">
+                    <div class="header__item header__search">
+                        <form action='' method="get" class="form__search">
+                             
+                            <input type="search"  name="q" value ="" placeholder="Поиск...">
+                            <button type="submit" class="button__search"><img src='/image/search.svg'></button>
+                    
+                        </button>
+                        </form>
+                    </div>
+                    <div class="header__menu">
+    
+                        <div class="header__item header__cart">
+                            <span class="header__cart__quantity">6</span>
+                            <img src="/image/shopping-cart.svg" alt="" ></div>
+                            <div class="header__filter">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
+                    </div>
+                    
+                    <ul class="header__list">
+                    
+                        
+                        <li class="header__item  header__link"><a href="catalog.html">Главная</a></li>
+                        <li class="header__item header__link"><a href="#">о нас</a></li>
+                        <li class="header__item header__link"><a href="#">местонахождение</a></li>
+                        <li class="header__item header__link"><a href="#">каталог</a></li>
+
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="content">
+            <div class="main">
+                <div class="filter">
+
+                    <div class="filter__columns">
+                        <div class="filter__title"><p>Фильтр по параметрам</p></div>
+                        <div class="filter__range-changer filter__param"> 
+                            <div class="filter__item__title"><p>Диапозон цен</p></div>
+                            <div class="filter__range__slider  filter__section">
+                               
+                                <div class="filter__range__slider filter__section" id="range-slider-price">
+                                    <div class="filters-price__inputs">
+                                        <label class="filters-price__label">
+                                            <span class="filters-price__text">от</span>
+                                            <input type="number" min="0" max="9999999" placeholder="0" value="0" class="filters-price__input" id="input-2">
+                                            <span class="filters-price__text">ТГ</span>
+                                        </label>
+                                        <label class="filters-price__label">
+                                            <span class="filters-price__text">до</span>
+                                            <input type="number" min="0" max="9999999" placeholder="0" value="300000" class="filters-price__input" id="input-3">
+                                            <span class="filters-price__text">ТГ</span>
+                                        </label>
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="filter__brands filter__param">
+                            <div class="filter__item__title"><p>Бренды</p></div>
+                        <div class="filter__parameters__brands filter__section">
+                                <ul class="filter__list">
+                                    <div class="checkbox">
+                                        <input class="checkbox-input" type="checkbox" id="checkbox2">
+                                        <label class="checkbox-label" for="checkbox2">
+                                          Чекбокс 2
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="checkbox-input" type="checkbox" id="checkbox3">
+                                        <label class="checkbox-label" for="checkbox3">
+                                          Чекбокс 2
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="checkbox-input" type="checkbox" id="checkbox4">
+                                        <label class="checkbox-label" for="checkbox4">
+                                          Чекбокс 2
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="checkbox-input" type="checkbox" id="checkbox5">
+                                        <label class="checkbox-label" for="checkbox5">
+                                          Чекбокс 2
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="checkbox-input" checked type="checkbox" id="checkbox8">
+                                        <label class="checkbox-label" for="checkbox8">
+                                          Чекбокс 2
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="checkbox-input" type="checkbox" id="checkbox6">
+                                        <label class="checkbox-label" for="checkbox6">
+                                          Чекбокс 2
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="checkbox-input" type="checkbox" id="checkbox7">
+                                        <label class="checkbox-label" for="checkbox7">
+                                          Чекбокс 2
+                                        </label>
+                                    </div>
+                                </ul>
+                        </div>
+                        </div>
+                        <div class="filter__models filter__param">
+                            <div class="filter__item__title"><p>Модели</p></div>
+                            <div class="filter__parameters__brands filter__section">
+                                <ul class="filter__list">
+                                    <div class="checkbox">
+                                        <input class="checkbox-input" type="checkbox" id="checkbox2">
+                                        <label class="checkbox-label" for="checkbox2">
+                                          Чекбокс 2
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="checkbox-input" type="checkbox" id="checkbox3">
+                                        <label class="checkbox-label" for="checkbox3">
+                                          Чекбокс 2
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="checkbox-input" type="checkbox" id="checkbox4">
+                                        <label class="checkbox-label" for="checkbox4">
+                                          Чекбокс 2
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="checkbox-input" type="checkbox" id="checkbox5">
+                                        <label class="checkbox-label" for="checkbox5">
+                                          Чекбокс 2
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="checkbox-input" checked type="checkbox" id="checkbox8">
+                                        <label class="checkbox-label" for="checkbox8">
+                                          Чекбокс 2
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="checkbox-input" type="checkbox" id="checkbox6">
+                                        <label class="checkbox-label" for="checkbox6">
+                                          Чекбокс 2
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="checkbox-input" type="checkbox" id="checkbox7">
+                                        <label class="checkbox-label" for="checkbox7">
+                                          Чекбокс 2
+                                        </label>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter__year-changer filter__param">
+                            <div class="filter__item__title"><p>Год выпуска</p></div>
+                            <div class="filter__range__slider filter__section" id="range-slider-year">
+                                <div class="filters-price__inputs">
+                                    <label class="filters-price__label">
+                                        <span class="filters-price__text">от</span>
+                                        <input type="number" min="1990" max="2025" placeholder="1990" value="2010" class="filters-price__input" id="input-0">
+                                        <span class="filters-price__text">Г</span>
+                                    </label>
+                                    <label class="filters-price__label">
+                                        <span class="filters-price__text">до</span>
+                                        <input type="number" min="1990" max="2025" placeholder="2025" value="2025" class="filters-price__input" id="input-1">
+                                        <span class="filters-price__text">Г</span>
+                                    </label>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <div class="filter__availability filter__param">
+                            <div class="filter__item__title"><p>Наличие</p></div>
+                            <div class="filter__parameters__brands filter__section">
+                                <ul class="filter__list">
+                                    <div class="checkbox">
+                                        <input class="checkbox-input" type="checkbox" id="checkbox2">
+                                        <label class="checkbox-label" for="checkbox2">
+                                          Чекбокс 2
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="checkbox-input" type="checkbox" id="checkbox3">
+                                        <label class="checkbox-label" for="checkbox3">
+                                          Чекбокс 2
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="checkbox-input" type="checkbox" id="checkbox4">
+                                        <label class="checkbox-label" for="checkbox4">
+                                          Чекбокс 2
+                                        </label>
+                                    </div>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter__buttons">
+                            <div class="filter__button--button send"><button>Отправить</button></div>
+                            <div class="filter__button--button reset"><button>Сбросить</button></div>
+                        </div>
+                </div>
+                </div>
+                <div class="catalog">
+                    <div class="catalog__sort">
+                        <div class="catalog__sort__row">
+                            <form action="#" method="get">
+                                <label class = 'catalog__sort__title' for="catalog__sort__title">Сортировать по</label>
+                                <select class = 'catalog__sort__select' name="catalog__sort__select" id="sort">
+                                  
+                                  <option class='catalog__sort__option' value="По убыванию цены"> убыванию цены</option>
+                                  <option class='catalog__sort__option' value="По возрастанию цены">По возрастанию цены</option>
+                                  <option class='catalog__sort__option' value="По новизне">По новизне</option>
+                                </select>
+                            </form>
+
+                        </div>
+                    </div>
+                    <div class="catalog__cards">
+                        <div class="catalog__cards__row">
+                            <div class="catalog__card">
+                                <div class="catalog__card__image">
+                                    <a href="product.html"><img src="./image/moto.png" alt=""></a>
+                                    <div class="catalog__card__availability"><p>В пути</p></div>
+                                </div>
+                                <div class="catalog__card__title"><a href="#">Мотоцикл  rx20300ME</a></div>
+                                <div class="catalog__card__bottom">
+                                    <div class="catalog__card__price"><p>120000000 ₸</p></div>
+                                    <a href="#" class="catalog__card__save">Сохранить</a>
+                                </div>
+
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__card__image">
+                                    <a href="#"><img src="./image/moto.png" alt=""></a>
+                                    <div class="catalog__card__availability"><p>В наличие</p></div>
+                                </div>
+                                <div class="catalog__card__title"><a href="#">Мотоцикл  rx20300ME</a></div>
+                                <div class="catalog__card__bottom">
+                                    <div class="catalog__card__price"><p>120000000 ₸</p></div>
+                                    <a href="#" class="catalog__card__save">Сохранить</a>
+                                </div>
+
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__card__image">
+                                    <a href="#"><img src="./image/moto.png" alt=""></a>
+                                    <div class="catalog__card__availability"><p>В пути</p></div>
+                                </div>
+                                <div class="catalog__card__title"><a href="#">Мотоцикл  rx20300ME</a></div>
+                                <div class="catalog__card__bottom">
+                                    <div class="catalog__card__price"><p>120000000 ₸</p></div>
+                                    <a href="#" class="catalog__card__save">Сохранить</a>
+                                </div>
+
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__card__image">
+                                    <a href="#"><img src="./image/moto.png" alt=""></a>
+                                    <div class="catalog__card__availability"><p>В пути</p></div>
+                                </div>
+                                <div class="catalog__card__title"><a href="#">Мотоцикл  rx20300ME</a></div>
+                                <div class="catalog__card__bottom">
+                                    <div class="catalog__card__price"><p>120000000 ₸</p></div>
+                                    <a href="#" class="catalog__card__save">Сохранить</a>
+                                </div>
+
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__card__image">
+                                    <a href="#"><img src="./image/moto.png" alt=""></a>
+                                    <div class="catalog__card__availability"><p>В пути</p></div>
+                                </div>
+                                <div class="catalog__card__title"><a href="#">Мотоцикл  rx20300ME</a></div>
+                                <div class="catalog__card__bottom">
+                                    <div class="catalog__card__price"><p>120000000 ₸</p></div>
+                                    <a href="#" class="catalog__card__save">Сохранить</a>
+                                </div>
+
+                            </div>
+                            <div class="catalog__card">
+                                
+                                <div class="catalog__card__image">
+                                    <a href="#"><img src="./image/moto.png" alt=""></a>
+                                    <div class="catalog__card__availability"><p>В пути</p></div>
+                                </div>
+                                <div class="catalog__card__title"><a href="#">Мотоцикл  rx20300ME</a></div>
+                                <div class="catalog__card__bottom">
+                                    <div class="catalog__card__price"><p>120000000 ₸</p></div>
+                                    <a href="#" class="catalog__card__save">Сохранить</a>
+                                </div>
+
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__card__image">
+                                    <a href="#"><img src="./image/moto.png" alt=""></a>
+                                    <div class="catalog__card__availability"><p>В наличие</p></div>
+                                </div>
+                                <div class="catalog__card__title"><a href="#">Мотоцикл  rx20300ME</a></div>
+                                <div class="catalog__card__bottom">
+                                    <div class="catalog__card__price"><p>120000000 ₸</p></div>
+                                    <a href="#" class="catalog__card__save">Сохранить</a>
+                                </div>
+
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__card__image">
+                                    <a href="#"><img src="./image/moto.png" alt=""></a>
+                                    <div class="catalog__card__availability"><p>В пути</p></div>
+                                </div>
+                                <div class="catalog__card__title"><a href="#">Мотоцикл  rx20300ME</a></div>
+                                <div class="catalog__card__bottom">
+                                    <div class="catalog__card__price"><p>120000000 ₸</p></div>
+                                    <a href="#" class="catalog__card__save">Сохранить</a>
+                                </div>
+
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__card__image">
+                                    <a href="#"><img src="./image/moto.png" alt=""></a>
+                                    <div class="catalog__card__availability"><p>В пути</p></div>
+                                </div>
+                                <div class="catalog__card__title"><a href="#">Мотоцикл  rx20300ME</a></div>
+                                <div class="catalog__card__bottom">
+                                    <div class="catalog__card__price"><p>120000000 ₸</p></div>
+                                    <a href="#" class="catalog__card__save">Сохранить</a>
+                                </div>
+
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__card__image">
+                                    <a href="#"><img src="./image/moto.png" alt=""></a>
+                                    <div class="catalog__card__availability"><p>В пути</p></div>
+                                </div>
+                                <div class="catalog__card__title"><a href="#">Мотоцикл  rx20300ME</a></div>
+                                <div class="catalog__card__bottom">
+                                    <div class="catalog__card__price"><p>120000000 ₸</p></div>
+                                    <a href="#" class="catalog__card__save">Сохранить</a>
+                                </div>
+
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__card__image">
+                                    <a href="#"><img src="./image/moto.png" alt=""></a>
+                                    <div class="catalog__card__availability"><p>В пути</p></div>
+                                </div>
+                                <div class="catalog__card__title"><a href="#">Мотоцикл  rx20300ME</a></div>
+                                <div class="catalog__card__bottom">
+                                    <div class="catalog__card__price"><p>120000000 ₸</p></div>
+                                    <a href="#" class="catalog__card__save">Сохранить</a>
+                                </div>
+
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__card__image">
+                                    <a href="#"><img src="./image/moto.png" alt=""></a>
+                                    <div class="catalog__card__availability"><p>В наличие</p></div>
+                                </div>
+                                <div class="catalog__card__title"><a href="#">Мотоцикл  rx20300ME</a></div>
+                                <div class="catalog__card__bottom">
+                                    <div class="catalog__card__price"><p>120000000 ₸</p></div>
+                                    <a href="#" class="catalog__card__save">Сохранить</a>
+                                </div>
+
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__card__image">
+                                    <a href="#"><img src="./image/moto.png" alt=""></a>
+                                    <div class="catalog__card__availability"><p>В пути</p></div>
+                                </div>
+                                <div class="catalog__card__title"><a href="#">Мотоцикл  rx20300ME</a></div>
+                                <div class="catalog__card__bottom">
+                                    <div class="catalog__card__price"><p>120000000 ₸</p></div>
+                                    <a href="#" class="catalog__card__save">Сохранить</a>
+                                </div>
+
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__card__image">
+                                    <a href="#"><img src="./image/moto.png" alt=""></a>
+                                    <div class="catalog__card__availability"><p>В пути</p></div>
+                                </div>
+                                <div class="catalog__card__title"><a href="#">Мотоцикл  rx20300ME</a></div>
+                                <div class="catalog__card__bottom">
+                                    <div class="catalog__card__price"><p>120000000 ₸</p></div>
+                                    <a href="#" class="catalog__card__save">Сохранить</a>
+                                </div>
+
+                            </div>
+                            <div class="catalog__card">
+                                <div class="catalog__card__image">
+                                    <a href="#"><img src="./image/moto.png" alt=""></a>
+                                    <div class="catalog__card__availability"><p>В пути</p></div>
+                                </div>
+                                <div class="catalog__card__title"><a href="#">Мотоцикл  rx20300ME</a></div>
+                                <div class="catalog__card__bottom">
+                                    <div class="catalog__card__price"><p>120000000 ₸</p></div>
+                                    <a href="#" class="catalog__card__save">Сохранить</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__pagination">
+                        <a href="#" class="catalog__pagination__arrow disabled"><</a>
+                        <a href="#" >1</a>
+                        <a href="#" class="active">2</a>
+                        <a href="#">3</a>
+                        <a href="#" class="catalog__pagination__arrow">></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="footer">
+            <p>хай</p>
+        </div>
+    </div>
+      
+</body>
+</html>
